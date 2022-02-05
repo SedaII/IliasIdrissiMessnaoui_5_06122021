@@ -48,7 +48,6 @@
           <h1>Votre panier</h1>
           <section class="cart">
             <section id="cart__items">
-              Panier vide.
             </section>
             <div class="cart__price">
               <p>Total (<span id="totalQuantity">0</span> articles) : <span id="totalPrice">0</span> €</p>
@@ -61,7 +60,7 @@
               cas de problème de saisie, un message d’erreur devra être affiché en dessous du champ
               correspondant. -->
 
-              <form method="get" class="cart__order__form">
+              <form method="post" class="cart__order__form" id="orderForm">
                 <div class="cart__order__form__question">
                   <label for="firstName">Prénom: </label>
                   <input type="text" name="firstName" id="firstName" required>
@@ -88,7 +87,7 @@
                   <p id="emailErrorMsg"></p>
                 </div>
                 <div class="cart__order__form__submit">
-                  <input type="submit" value="Commander !" id="order">
+                  <input type="button" value="Commander !" id="order">
                 </div>
               </form>
             </div>
